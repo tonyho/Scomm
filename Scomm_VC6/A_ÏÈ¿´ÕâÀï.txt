@@ -1,0 +1,6 @@
+用 NT Graph 和 SCOMM控件完成
+
+环境是在 Visual Studio 2008 , 注意在使用前需要注册控件, 注册后要使用SCOMM需要 先打开Visual Studio然后在 工具 --> 选择工具箱项 --> 在COM组件标签页中 勾选 Microsoft Communiciation Control 即可以像在 VC 6中一样使用SCOMM控件了
+
+                                      2010-11-20
+                                       何雄军

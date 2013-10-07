@@ -1,0 +1,264 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Scomm_VC6.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Scomm_VC6.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 253, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Scomm_VC6"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Scomm_VC6 2.0 版",IDC_STATIC,45,19,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010  何雄军 沈阳理工大学",IDC_STATIC,43,33,167,10
+    DEFPUSHBUTTON   "确定",IDOK,196,7,50,14,WS_GROUP
+    LTEXT           "QQ:373466062    TonyHo.Profression@Gmail.com",IDC_STATIC,41,50,193,9
+    LTEXT           "谢谢寝室小叶",IDC_STATIC,194,90,52,12
+    LTEXT           "2010-11-20  Version 2",IDC_STATIC_VERSION2,14,94,86,8
+    LTEXT           " 2010-11-13 Version 1",IDC_STATIC,7,80,91,9
+END
+
+IDD_SCOMM_VC6_DIALOG DIALOGEX 0, 0, 712, 413
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Scomm_VC6"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SEND,309,17,169,13,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,633,70,25,25
+    EDITTEXT        IDC_EDIT_RECEIVE,305,33,240,53,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "&S发送内容",IDC_BUTTON_SENDALL,491,15,47,16
+    CONTROL         "",IDC_NTGRAPHCTRL1,
+                    "{C9FE01C2-2746-479B-96AB-E0BE9931B018}",WS_TABSTOP,7,93,686,311
+    PUSHBUTTON      "&C采样并绘制波形",IDC_BUTTON_CURVE,621,21,71,18
+    PUSHBUTTON      "&D显示完整曲线",IDC_BUTTON_DISPLAYALLCURVE,620,44,73,17
+    COMBOBOX        IDC_COMBO_COM,182,29,48,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开串口",IDC_BUTTON_OPEN,238,16,60,32
+    LTEXT           "串口选择:",IDC_STATIC_COM,138,30,37,8
+    CTEXT           "波特率:",IDC_STATIC_BAUD,137,57,29,8
+    COMBOBOX        IDC_COMBO_BAUD,182,57,46,144,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "状态:",IDC_STATIC_COM_STATUS,240,57,21,8
+    LTEXT           "未打开",IDC_STATIC_STATUS,263,53,32,17,SS_NOTIFY | SS_ENDELLIPSIS,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "清除接收内容",IDC_BUTTON_CLEAR_RECEIVE,551,15,58,30
+    GROUPBOX        "第二步:串口设置",IDC_STATIC_GROUP_SETTING,130,7,172,78
+    EDITTEXT        IDC_EDIT_CMDTOBESEND,14,69,102,14,ES_AUTOHSCROLL
+    LTEXT           "要连续发送的命令",IDC_STATIC_CMD,16,55,65,8
+    EDITTEXT        IDC_EDIT_CMD_DELAY,77,19,37,13,ES_AUTOHSCROLL
+    LTEXT           "连续发送间隔ms",IDC_STATIC_CONTINUSMS,14,21,57,8
+    GROUPBOX        "第一步:连续发送设置",IDC_STATIC_CONTINUS_SET,7,7,113,81
+    GROUPBOX        "发送和接收框",IDC_STATIC_SENDANDRECEIVE,303,7,245,82
+    GROUPBOX        "曲线控制",IDC_STATIC_CURVE_CONTROL,613,7,86,59
+    PUSHBUTTON      "退出程序",IDC_BUTTON_QUIT,551,49,58,35
+    LTEXT           "有效数据长度:",IDC_STATIC_DATA_RECEIVE_LENGTH,15,41,53,8
+    EDITTEXT        IDC_EDIT_RECIEVE_DATA_LENGTH,77,36,35,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "Scomm_VC6 Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Scomm_VC6"
+            VALUE "LegalCopyright", "版权所有 (C) 2010"
+            VALUE "OriginalFilename", "Scomm_VC6.EXE"
+            VALUE "ProductName", "Scomm_VC6 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_SCOMM_VC6_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 705
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 406
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCOMM_VC6_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_NTGRAPHCTRL1, 0x376, 303, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x6a5a, 0x0000, 0x3044, 0x0000, 0x00c2, 
+0x0000, 0x4e0c, 0x4754, 0x6172, 0x6870, 0x7443, 0x6c72, 0x0131, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0200, 0x0000, 0x0000, 0xff00, 0xffff, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x8000, 0x8080, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xff00, 0xffff, 
+0x0200, 0x6725, 0x2502, 0x0067, 0x0000, 0x0000, 0x0100, 0xff01, 0xffff, 
+0xff00, 0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0xff00, 0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0001, 0x5203, 0x0be3, 0x8f91, 0x11ce, 
+0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 0x0190, 0x4244, 0x0001, 
+0x4105, 0x6972, 0x6c61, 0x00ff, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 0x0190, 0x7cdc, 0x0001, 0x4105, 
+0x6972, 0x6c61, 0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x0151, 0x0000, 0x9000, 0x4401, 0x0142, 0x0500, 0x7241, 0x6169, 
+0x006c, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 
+0x746c, 0x0000, 0x0000, 0x0000, 0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 
+0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Scomm_VC6(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Scomm_VC6.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
